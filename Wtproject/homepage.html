@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChitChat-Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <script src="https://kit.fontawesome.com/bc515d25e6.js" crossorigin="anonymous"></script>
+  
+  
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+            <div style=" background-color:#1f2833;color:white;" class=" title-name"><h1>Chitchat</h1><br></div>
+            
+    
+    </header>
+ <div class="homepage-fixed-div" style="background-color:#66fcf1; width:150px; padding:2% 2%; text-align:center;">
+        
+           <a href="C:\Users\Gandikota Sowmya\OneDrive\Documents\deepak\WebTechnologies\Wtproject\home-profilepage.html"><i class="fa-solid fa-user fa-4x homepage-nav"></i> <br>
+            <button style="border-style:none ; background-color:#66fcf1;" class="homepage-nav-name">Profile</button><br><br></a> 
+           
+        
+           <a href="C:\Users\Gandikota Sowmya\OneDrive\Documents\deepak\WebTechnologies\Wtproject\liked-posts.html"> <i class=" fa-solid fa-heart fa-4x homepage-nav"></i><br>
+            <button style="border-style:none ; background-color:#66fcf1;" class="homepage-nav-name"   >liked-posts</button><br><br></a>
+
+          <a href="C:\Users\Gandikota Sowmya\OneDrive\Documents\deepak\WebTechnologies\Wtproject\uploads.html"> <i class="fa-solid fa-arrow-up-from-bracket fa-4x homepage-nav"></i> <br>
+            <button style="border-style:none ; background-color:#66fcf1;" class="homepage-nav-name">Your-upload</button><br><br></a> 
+
+            <i class="fa-solid fa-magnifying-glass fa-4x homepage-nav"></i> <br>
+            <button style="border-style:none ; background-color:#66fcf1;" class="homepage-nav-name">search</button><br><br>
+
+          
+
+        
+    </div>
+    <!-- notifications -->
+    <div style="float:right; padding:0.5% 1%; text-align:center;" class="notification">
+        <nav>
+           
+            <div class="icon" onclick="toggleNotifi()">
+                <img src="images/bell1.png" alt=""> <span>10</span>
+            </div>
+            <div class="notifi-box" id="box">
+                <h2>Notifications <span>10</span></h2>
+              <a href="C:\Users\Gandikota Sowmya\OneDrive\Documents\deepak\WebTechnologies\Wtproject\profile.html">  <div class="notifi-item">
+                    <img src="images/pk1.jfif" alt="img">
+                    <div class="text">
+                       <h4>pk fan page</h4>
+                       <p>@Actor and Leader</p>
+                    </div> 
+                </div></a>
+    
+                <div class="notifi-item">
+                    <img src="images//tatasir.jfif" alt="img">
+                    <div class="text">
+                       <h4>Ratan Tata</h4>
+                       <p>@Ceo of Tata Groups</p>
+                    </div> 
+                </div>
+    
+                <div class="notifi-item">
+                    <img src="images/ambani.jfif" alt="img">
+                    <div class="text">
+                       <h4 >Mukesh Ambani </h4>
+                       <p>@Owner of Reliance group of indutries</p>
+                    </div> 
+                </div>
+    
+                <div class="notifi-item">
+                    <img src="images/adani.jfif" alt="img">
+                    <div class="text">
+                       <h4>Gowtam Adani </h4>
+                       <p>@Founder of Adani groups</p>
+                    </div> 
+                </div>
+    
+                
+            </div>
+        </nav>
+    </div>
+       
+<!--         
+        <i class="fa-regular fa-bell fa-2x"></i> <br>
+        <button style="border-style:none ; background-color:white;">Notifications</button><br><br> -->
+       
+        
+        <div class="container-post" id="imgBox">
+            <div id="prevText"></div>
+                   <textarea id="textBox" placeholder="Add caption:" ></textarea>
+                   <input type="file"  id="file" accept="image/*" name="image" style="display:none;" onchange="loadFile(event)">
+
+                   <label for="file"><img src="images/upload.png" alt="upload-icon" class="upload-icon"></label>
+                   <div class="conatiner2">
+                    <button class="share-btn">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <div class="share-options">
+                        <p class="share-title">Share</p>
+                        <div class="social-media">
+                           <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+                              <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                            <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                            <button class="social-media-btn"><a href="https://twitter.com/home" class="href"><i class="fab fa-twitter"></i></a></button>  
+                            <button class="social-media-btn"><i class="fab fa-facebook"></i></button>
+                            <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+            
+                        </div>
+                        <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn">copy</button>
+                        </div>
+                    </div>
+                    <div class="heart" id="heart1" onclick="Toggle()"><i class="fa-solid fa-heart fa-2x"></i></div>
+                    <div>
+                    </div>
+                 </div>
+
+
+        </div>
+        
+               
+
+               <script>
+                var textBox = document.getElementById("textBox");
+                var imgBox = document.getElementById("imgBox");
+           
+               textBox.onkeyup = textBox.onkeypress = function(){
+               document.getElementById("prevText").innerHTML = this.value;
+           }
+           
+           var loadFile = function(event){
+               imgBox.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0])+ ")";
+           
+           }
+           const shareBtn = document.querySelector('.share-btn');
+           const shareOptions = document.querySelector('.share-options');
+
+           shareBtn.addEventListener('click',()=>{
+               shareOptions.classList.toggle('active');
+           })
+
+
+           var btnvar1 = document.getElementById('heart1');
+           function Toggle(){
+      if(btnvar1.style.color=="red"){
+        btnvar1.style.color = "grey"
+      }
+      else{
+        btnvar1.style.color = "red"
+      }
+           }
+
+
+           var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = '510px';
+		box.style.opacity = 1;
+		down = true;
+	}
+}
+        </script>
+    
+
+</body>
+</html>

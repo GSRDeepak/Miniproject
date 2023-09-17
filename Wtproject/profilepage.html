@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile-page-ChitChat</title>
+    <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/bc515d25e6.js" crossorigin="anonymous"></script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+  
+
+</head>
+<body>
+    <div style="padding:1% 3%; background-color:#1f2833;color:white; " class="container-fluid"><p><h1>Chitchat</h1></p></div>
+    <div style="float:right;text-align:center; padding:2% 2%;"><i class="fa-solid fa-user fa-4x homepage-nav"></i> <br>
+    Profile page</div>
+    <div class="Signup " style="margin: 5% 15%; padding:5% 15%;">
+
+    <form action="" class="signupform" style="font-size:20px;">
+        <label for="fname">FirstName:</label>
+        <input type="text" class="fname"> <br><br>
+        <label for="lname">LastName:</label>
+        <input type="text" class="lname"><br><br>
+       <label for="phno">Mobile No:</label>
+       <input type="text" class="phno"><br><br>
+         <label for="email">Email Id:</label>
+         <input type="text" class="email"><br><br>
+         <label for="pwd">Passsword:</label>
+         <input type="password" class="pwd"><br><br>
+         <input type="button" style="background-color:red" class="btn" onclick="this.form.reset();" value="cancel">
+        <input type="button" style="background-color:green"  class="btn" onclick="openPopup()"  value="save">
+         
+        <div class="popup" id="popup">
+          <img src="https://i.pinimg.com/originals/7b/dd/1b/7bdd1bc7db7fd48025d4e39a0e2f0fd8.jpg" alt="tickmark">
+          <h2>Thank you!</h2>
+          <p>your details has been successfully saved.Thanks!</p>
+
+          <button type="button" onclick="closePopup()">OK</button>
+      </div>
+         
+    </form>
+    
+<script>
+  let popup=document.getElementById("popup")
+  
+  function openPopup(){
+      popup.classList.add("open-popup")
+  }
+  function closePopup(){
+      popup.classList.remove("open-popup")
+  }
+  </script>  
+</body>
+</html>

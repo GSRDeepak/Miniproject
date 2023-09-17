@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body>
+    <header>
+      <div style="float:right; padding-right:1%;padding-top:1%; text-align:center;" class="home"><a href="C:\Users\Gandikota Sowmya\Documents\deepak\WebTechnologies\Wtproject\homepage.html"><i class="fa-solid fa-house-user fa-2x" style="color:whitesmoke;"></i>
+        <br> <span style="color:whitesmoke">Homepage</span> </a> 
+    </div>
+        
+        <div style=" background-color:#1f2833;color:white;padding-left:1%;padding-top:1%; " class=" title-name"><h1 style="margin: 0;">Chit chat</h1><br>
+           
+    </div>
+</header>
+    <div class="header__wrapper">
+      <!-- <header></header> -->
+      <div class="cols__container">
+        <div class="left__col">
+          <div class="img__container">
+            <img src="images/pk1.jfif" alt="pk">
+            <span></span>
+          </div>
+          <h2>Pk Fan page</h2>
+          <p>Actor</p>
+          <p>pkfans@gmail.com</p>
+
+          <ul class="about">
+            <li><span>1000M</span>Followers</li>
+            <li><span>322</span>Following</li>
+            <li><span>200,543</span>Attraction</li>
+          </ul>
+
+          <div class="content">
+            <p>
+                Pawan Kalyan is an Indian actor, filmmaker, and politician. His films are predominantly in Telugu cinema.The founder of Janasena Party,Jana Sena or Jana Sena Party (JSP) (People's Army Party)[4] is an Indian Regional political party based in Andhra Pradesh and Telangana, India. It was founded by Tollywood actor and politician Pawan Kalyan on 14 March 2014. Jana Sena means "People's Army" in Telugu. The motto of the party is "fight for the rights of each and every common person".            </p>
+
+            <ul>
+              <li><i class="fab fa-twitter"></i></li>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-dribbble"></i>
+            </ul>
+          </div>
+        </div>
+        <div class="right__col">
+          <nav>
+            <ul>
+              <li><a href="">photos</a></li>
+              <li><a href="">galleries</a></li>
+              <li><a href="">groups</a></li>
+              <li><a href="">about</a></li>
+            </ul>
+            <button id="flw">Follow</button>
+          </nav>
+
+          <div class="photos">
+            <img src="images/king1.jpg" alt="kohli">
+            <img src="images/jsp.jfif" alt="pk">
+            <img src="images/pk2.jfif" alt="pk">
+            <img src="images/pk3.jfif" alt="pk">
+            <img src="images/pk4.jfif" alt="pk">
+            <img src="images/pk5.jfif" alt="pk">
+            <img src="images/pk1.jfif" alt="pk">
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        let flw=document.querySelector('#flw');
+        flw.addEventListener('click',()=>{
+            let txt=flw.innerHTML;
+            console.log(txt)
+            if(txt=="Follow"){
+                flw.innerHTML='Following';
+            }else{
+                flw.innerHTML='Follow';
+                
+            }
+        })
+    </script>
+  </body>
+</html>

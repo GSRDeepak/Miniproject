@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/bc515d25e6.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="login-page">
+<div>
+    <div style="margin-bottom:50px; margin-top:3%; text-align:center;"><h1>Chitchat</h1> </div>
+
+  <div class="popup" id="popup">
+    
+    <img src="https://i.pinimg.com/originals/7b/dd/1b/7bdd1bc7db7fd48025d4e39a0e2f0fd8.jpg" alt="tickmark">
+    <h2>Thank you!</h2>
+    <p>For logging in to our website.! </p>
+
+    <button type="button" onclick="closePopup()">OK</button>
+</div>
+<form action="">
+  <div class="box">
+    <div class="form">
+        <h2> Log in</h2>
+        <div class="inputBox">
+            <input type="text" required="required">
+            <span>Email-Id:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" required="required">
+            <span>Password</span>
+            <i></i>
+        </div>
+        <div class="links">
+           <a href="C:\Users\Gandikota Sowmya\OneDrive\Documents\deepak\WebTechnologies\Wtproject\Forgetpassword.html">Forget Password</a>
+           <a href="C:\Users\Gandikota Sowmya\OneDrive\Documents\deepak\WebTechnologies\Wtproject\signup.html">Signup</a>
+        </div>
+        <input type="submit" value="submit" onclick="openPopup()">
+    </div>
+  </div>
+</form>
+
+</div>
+  <script>
+    let popup=document.getElementById("popup")
+    
+    function openPopup(){
+        popup.classList.add("open-popup")
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+    </script>  
+</body>
+</html>

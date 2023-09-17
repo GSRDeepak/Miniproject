@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="login-page">
+    <div>
+    <div style="margin-bottom:50px; margin-top:3%; text-align:center;"><h1>Chitchat</h1> </div>
+
+  <div class="popup" id="popup">
+    <img src="https://i.pinimg.com/originals/7b/dd/1b/7bdd1bc7db7fd48025d4e39a0e2f0fd8.jpg" alt="tickmark">
+    <h2>Thank you!</h2>
+    <p> for signing up! your details has been successfully saved.Thanks!</p>
+
+    <button type="button" onclick="closePopup()">OK</button>
+</div>
+  <div class="box1">
+    <form action="connect1.php" method="POST">
+    <div class="form">
+        <h2> Sign up</h2>
+        <div class="inputBox">
+            <input type="text" class="fname" required="required" name="firstName">
+            <span>Firstname:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="text" class="lname"  required="required" name="lastName" >
+            <span>LastName:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="number" class="phno" required="required" name="mobileno">
+            <span>Mobileno:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="text" class="email" required="required" name="email">
+            <span>Email-Id:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" class="pwd" required="required" class="password">
+            <span>Password:</span>
+            <i></i>
+        </div>
+   
+        
+
+        <!-- <div class="links">
+           <a href="#">Forget Password</a>
+           <a href="#">Signup</a>
+        </div> -->
+        
+
+        <input type="submit" value="SUBMIT" onclick="openPopup()">
+        <input type="button" style="background-color:red" class="btn1" onclick="this.form.reset();" value="clear">
+    </div>
+</form>
+  </div>
+</div>
+ 
+  <script>
+    let popup=document.getElementById("popup")
+    
+    function openPopup(){
+        popup.classList.add("open-popup")
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+    </script>  
+</body>
+</html>
